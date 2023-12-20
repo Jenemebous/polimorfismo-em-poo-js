@@ -7,7 +7,7 @@ class Pagamento extends Transacao {
     }
   
 
-    beneficiarioDoPagamento() {
+    apresentar() {
       return "O beneficiário do pagamento é o " + this.beneficiario + ", Este é o valor: " + this.valor;
     }
   }
