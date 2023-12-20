@@ -7,7 +7,7 @@ class Imposto extends Transacao {
     }
   
 
-    tipoDoImposto() {
+    apresentar() {
       return "Este é um imposto " + this.tipoImposto + ", Este é o valor: " + this.valor;
     }
   }
