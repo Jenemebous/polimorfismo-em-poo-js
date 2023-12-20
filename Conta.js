@@ -6,7 +6,7 @@ class Conta extends Transacao {
         this.tipoConta = tipoConta;
     }
 
-    tipoDaConta() {
+    apresentar() {
         return "Esta transação é da conta " + this.tipoConta + ", Este é o valor: " + this.valor;
     }
 }
