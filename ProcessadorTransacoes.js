@@ -7,15 +7,15 @@ const Despesa = require("./Despesa");
 class ProcessadorTransacoes {
     processar(transacao) {
         if (transacao instanceof Conta) {
-            return transacao.tipoDaConta();
+            return transacao.apresentar();
         } else if (transacao instanceof Imposto) {
-            return transacao.tipoDoImposto();
+            return transacao.apresentar();
         } else if (transacao instanceof Pagamento) {
-            return transacao.beneficiarioDoPagamento();
+            return transacao.apresentar();
         } else if (transacao instanceof Salario) {
-            return transacao.funcionarioDoSalario();
+            return transacao.apresentar();
         } else if (transacao instanceof Despesa) {
-            return transacao.categoriaDaDespesa();
+            return transacao.apresentar();
         } else {
             return "Tipo de transação não reconhecido";
         }
@@ -23,3 +23,4 @@ class ProcessadorTransacoes {
 }
 
 module.exports = ProcessadorTransacoes;
+
