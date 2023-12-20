@@ -19,6 +19,9 @@ class Transacao {
   setValor(valor) {
       this.valor = valor;
   }
+
+  apresentar(){
+     return "Esta transação tem como descrição: " + this.descricao + ", Este é o valor: " + this.valor;
 }
 
 module.exports = Transacao;
