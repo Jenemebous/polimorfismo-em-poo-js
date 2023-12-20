@@ -7,7 +7,7 @@ class Despesa extends Transacao {
     }
   
    
-    categoriaDaDespesa() {
+    apresentar() {
 
       return "Esta despesa é de categoria " + this.categoria + ", Este é o valor: " + this.valor;
     }
