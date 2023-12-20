@@ -6,7 +6,7 @@ const Transacao = require("./Transacao")
       this.funcionario = funcionario;
     }
   
-    funcionarioDoSalario() {
+    apresentar() {
       return "Este salário é para o funcionário " + this.funcionario + ", Este é o valor: " + this.valor;
     }
   }
