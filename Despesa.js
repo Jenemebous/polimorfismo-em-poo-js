@@ -5,7 +5,12 @@ class Despesa extends Transacao {
       super(descricao, valor);
       this.categoria = categoria;
     }
-  
+   get categoria(){
+        return this.categoria;
+    }
+    set tipoConta(novCategoria){
+        this.categoria = novaCategoria
+    }
    
     apresentar() {
 
