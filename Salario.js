@@ -5,6 +5,12 @@ const Transacao = require("./Transacao")
       super(descricao, valor);
       this.funcionario = funcionario;
     }
+    get funcionario(){
+        return this.funcionario;
+    }
+    set funcionario(novoFunc){
+        this.funcionario = novoFunc
+    }
   
     apresentar() {
       return "Este salário é para o funcionário " + this.funcionario + ", Este é o valor: " + this.valor;
