@@ -5,6 +5,12 @@ class Pagamento extends Transacao {
       super(descricao, valor);
       this.beneficiario = beneficiario;
     }
+    get beneficiario(){
+        return this.beneficiario;
+    }
+    set beneficiario(novoBeneficiario){
+        this.beneficiario = novoBeneficiario
+    }
   
 
     apresentar() {
