@@ -6,6 +6,12 @@ class Conta extends Transacao {
         this.tipoConta = tipoConta;
     }
 
+    get tipoConta(){
+        return tipoConta;
+    }
+    set tipoConta(novoTipo){
+        this.tipoConta = novoTipo
+    }
     apresentar() {
         return "Esta transação é da conta " + this.tipoConta + ", Este é o valor: " + this.valor;
     }
