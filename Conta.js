@@ -7,7 +7,7 @@ class Conta extends Transacao {
     }
 
     get tipoConta(){
-        return tipoConta;
+        return this.tipoConta;
     }
     set tipoConta(novoTipo){
         this.tipoConta = novoTipo
